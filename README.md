@@ -1,1 +1,3 @@
-# LCS-Elo
+# LCS Elo
+
+Work in progress!
