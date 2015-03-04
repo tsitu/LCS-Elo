@@ -1,0 +1,104 @@
+//NALCS 2015 Spring Split Data
+//Format: Winner Loser
+//Convert abbreviations to full team names
+
+//WEEK 1
+// Day 1
+TSM C9
+DIG CST
+WFX GV
+TL TIP
+CLG T8
+// Day 2
+TIP DIG
+CST WFX
+TL CLG
+GV C9
+T8 TSM
+
+//WEEK 2
+// Day 1
+GV DIG
+T8 CST
+C9 TL
+CLG TIP
+TSM WFX
+// Day 2
+CLG C9
+WFX DIG
+TSM TL
+TIP T8
+GV CST
+
+//WEEK 3
+// Day 1
+TIP GV
+C9 T8
+TSM DIG
+TL CST
+CLG WFX
+// Day 2
+C9 CST
+CLG GV
+DIG TL
+T8 WFX
+TSM TIP
+
+//WEEK 4
+// Day 1
+CLG CST
+WFX TIP
+C9 DIG
+TL T8
+TSM GV
+// Day 2
+WFX C9
+TIP CST
+TSM CLG
+GV TL
+DIG T8
+
+//WEEK 5
+// Day 1
+WFX TL
+GV T8
+C9 TIP
+CLG DIG
+TSM CST
+// Day 2
+C9 CLG
+TL TSM
+DIG WFX
+T8 CST
+TIP GV
+
+//WEEK 6
+// Day 1
+C9 CST
+T8 TIP
+TL GV
+TSM DIG
+CLG WFX
+// Day 2
+GV CST
+C9 WFX
+TIP TSM
+TL CLG
+T8 DIG
+
+//WEEK 7
+// Day 1
+
+// Day 2
+
+
+//WEEK 8
+//Day 1
+
+//Day 2
+
+
+//WEEK 9
+//Day 1
+
+//Day 2
