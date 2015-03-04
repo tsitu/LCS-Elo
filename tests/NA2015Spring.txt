@@ -1,0 +1,13 @@
+NALCS Elo Rankings
+Format: Team Name - ELO
+
+TSM: 1296
+C9: 1264
+CLG: 1264
+TL: 1232
+GV: 1200
+T8: 1200
+TIP: 1200
+WFX: 1168
+DIG: 1136
+CST: 1040
