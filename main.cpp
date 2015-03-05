@@ -1,5 +1,4 @@
 //LCS Elo Ranking by tsitu
-
 #include <iostream>
 #include <sstream>
 #include <fstream>
@@ -36,15 +35,15 @@ void calculateElo(string winner, string loser, map<string, int> & orig) {
 	diff = elo1 - elo2 + 100;
 	expected1 = 1 / (1 + pow(10, -diff/400));
 	expected2 = 1 / (1 + pow(10, diff/400));
-	return1 = 32 * (1 - expected1);
-	return2 = 32 * (0 - expected2);
+	return1 = (int) 32 * (1 - expected1);
+	return2 = (int) 32 * (0 - expected2);
 
 	it->second = elo1 + return1;
 	it2->second = elo2 + return2;
 }
 
 void dump(map<string, int> & orig, ostream& ofile) {
-	ofile << "NALCS Elo Rankings" << endl;
+	ofile << "LCS Elo Rankings" << endl;
 	ofile << "Format: Team Name - ELO" << endl << endl;
 	map<string, int>::iterator it;
 	for (it = orig.begin(); it != orig.end(); it++) {
@@ -53,23 +52,16 @@ void dump(map<string, int> & orig, ostream& ofile) {
 }
 
 void dumpSorted(map<string, int> & orig, ostream& ofile) {
-	ofile << "NALCS Elo Rankings" << endl;
+	ofile << "LCS Elo Rankings" << endl;
 	ofile << "Format: Team Name - ELO" << endl << endl;
 	vector<int> eloSort;
 	map<string, int>::iterator it;
 	for (it = orig.begin(); it != orig.end(); it++) {
-		eloSort.push_back(it->second);
-	}
-	sort(eloSort.begin(), eloSort.end());
-
-	//Remove duplicates
-	int shift = 0; //Consistency when erasing from vector
-	for (unsigned int i=0; i<eloSort.size(); i++) {
-		if (eloSort[i-shift] == eloSort[i-shift+1]) {
-			eloSort.erase(eloSort.begin()+i-shift);
-			shift++;
+		if (find(eloSort.begin(), eloSort.end(), it->second) == eloSort.end()) {
+			eloSort.push_back(it->second);
 		}
 	}
+	sort(eloSort.begin(), eloSort.end());
 
 	//Output corresponding mapped keys, highest to lowest ELO
 	for (unsigned int i=0; i<eloSort.size(); i++) {
@@ -118,7 +110,6 @@ int main(int argc, char* argv[]) {
 			}
 
 			calculateElo(winner, loser, inputMap);
-			//calculateElo using FIDE and UCSF, scaled k factors 
 			//Add counter for how many games a team has played in total
 		}
 

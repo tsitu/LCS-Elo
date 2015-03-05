@@ -1,4 +1,4 @@
-NALCS Elo Rankings
+LCS Elo Rankings
 Format: Team Name - ELO
 
 TSM: 1296

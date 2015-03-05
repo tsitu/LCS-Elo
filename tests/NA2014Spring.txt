@@ -1,0 +1,11 @@
+LCS Elo Rankings
+Format: Team Name - ELO
+
+C9: 1446
+TSM: 1398
+CLG: 1328
+DIG: 1136
+CST: 1134
+CRS: 1104
+XDG: 1050
+EG: 1004
