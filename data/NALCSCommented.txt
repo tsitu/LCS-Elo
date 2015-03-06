@@ -1,3 +1,6 @@
+//All NALCS data from Season 3 up to Season 5 Week 7
+
+//Season 3 Spring Split
 CLG TSM
 CRS DIG
 CLG GGU
@@ -110,6 +113,8 @@ GGU CLG
 TSM DIG
 MRN COL
 VUL CRS
+
+//Season 3 Summer Split
 TSM CST
 VUL CRS
 C9 DIG
@@ -223,6 +228,8 @@ DIG CLG
 CRS CST
 C9 TSM
 DIG CLG
+
+//Season 4 Spring Split
 C9 TSM
 XDG EG
 CRS CST
@@ -335,6 +342,8 @@ EG CRS
 XDG TSM
 C9 CST
 EG XDG
+
+//Season 4 Summer Split
 C9 TSM
 CLG CRS
 LMQ EG
@@ -447,6 +456,8 @@ LMQ DIG
 CRS TSM
 EG LMQ
 C9 CLG
+
+//Season 5 Spring Split
 TSM C9
 DIG CST
 WFX GV

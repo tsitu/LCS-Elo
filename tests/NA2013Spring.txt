@@ -1,0 +1,11 @@
+LCS Elo Rankings
+Format = Team Name: ELO (games played)
+
+1) TSM: 1410 (28)
+2) CRS: 1318 (28)
+3) DIG: 1296 (28)
+4) CLG: 1168 (28)
+5) VUL: 1136 (28)
+6) GGU: 1118 (28)
+7) MRN: 1086 (28)
+8) COL: 1068 (28)

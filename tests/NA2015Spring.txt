@@ -1,13 +1,13 @@
 LCS Elo Rankings
-Format: Team Name - ELO
+Format = Team Name: ELO (games played)
 
-TSM: 1296
-C9: 1264
-CLG: 1264
-TL: 1232
-GV: 1200
-T8: 1200
-TIP: 1200
-WFX: 1168
-DIG: 1136
-CST: 1040
+1) TSM: 1296 (12)
+2) C9: 1264 (12)
+3) CLG: 1264 (12)
+4) TL: 1232 (12)
+5) GV: 1200 (12)
+6) T8: 1200 (12)
+7) TIP: 1200 (12)
+8) WFX: 1168 (12)
+9) DIG: 1136 (12)
+10) CST: 1040 (12)

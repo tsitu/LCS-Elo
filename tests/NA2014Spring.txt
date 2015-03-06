@@ -1,11 +1,11 @@
 LCS Elo Rankings
-Format: Team Name - ELO
+Format = Team Name: ELO (games played)
 
-C9: 1446
-TSM: 1398
-CLG: 1328
-DIG: 1136
-CST: 1134
-CRS: 1104
-XDG: 1050
-EG: 1004
+1) C9: 1446 (28)
+2) TSM: 1400 (28)
+3) CLG: 1328 (28)
+4) DIG: 1136 (28)
+5) CST: 1132 (28)
+6) CRS: 1104 (28)
+7) EG: 1036 (28)
+8) XDG: 1018 (28)
