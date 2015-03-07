@@ -1,0 +1,13 @@
+LCS Elo Rankings
+Format = Team Name: ELO (games played)
+
+1) SK: 1328 (14)
+2) FNC: 1296 (14)
+3) H2K: 1296 (14)
+4) GMB: 1232 (14)
+5) CW: 1200 (14)
+6) UOL: 1200 (14)
+7) EL: 1136 (14)
+8) ROC: 1136 (14)
+9) GIA: 1104 (14)
+10) MYM: 1072 (14)

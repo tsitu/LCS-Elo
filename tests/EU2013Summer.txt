@@ -1,0 +1,11 @@
+LCS Elo Rankings
+Format = Team Name: ELO (games played)
+
+1) LD: 1328 (28)
+2) FNC: 1264 (30)
+3) EG: 1248 (31)
+4) GMB: 1216 (31)
+5) NIP: 1200 (30)
+6) ATN: 1184 (29)
+7) SK: 1152 (29)
+8) MYM: 1008 (28)

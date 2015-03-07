@@ -1,6 +1,5 @@
 //NALCS 2015 Spring Split Data
 //Format: Winner Loser
-//Convert abbreviations to full team names
 
 //WEEK 1
 // Day 1
