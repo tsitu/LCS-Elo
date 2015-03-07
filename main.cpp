@@ -32,7 +32,7 @@ void calculateElo(string winner, string loser, map<string, vector<int> > & orig)
 		elo2 = it2->second[0];
 	}
 
-	diff = elo1 - elo2 + 100;
+	diff = elo1 - elo2;
 	expected1 = 1 / (1 + pow(10, -diff/400));
 	expected2 = 1 / (1 + pow(10, diff/400));
 	return1 = (int) 32 * (1 - expected1);
