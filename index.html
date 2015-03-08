@@ -29,33 +29,35 @@
       </header>
 
       <section>
-        <h3><a id="NALCS" class="anchor" href="#NALCS" aria-hidden="true"><span class="octicon octicon-link"></span></a>NALCS</h3>
+        <h3><a id="NALCS" class="anchor" href="#NALCS" aria-hidden="true"><span class="octicon octicon-link"></span></a>NALCS by split</h3>
 
-        <canvas id="myChart" height="400" width="400"></canvas>
+        <canvas id="myChart" height="400" width="600"></canvas>
         <script>
           var ctx = document.getElementById("myChart").getContext("2d");
           var data = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            labels: ["Season 3 Spring", "Season 3 Summer", 
+            "Season 4 Spring", "Season 4 Summer", 
+            "Season 5 Spring"],
             datasets: [
               {
-                label: "My First dataset",
+                label: "C9",
                 fillColor: "rgba(220,220,220,0.2)",
                 strokeColor: "rgba(220,220,220,1)",
                 pointColor: "rgba(220,220,220,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 80, 81, 56, 55, 40]
+                data: [null, 1524, 1474, 1328, 1264]
               },
               {
-                label: "My Second dataset",
+                label: "TSM",
                 fillColor: "rgba(151,187,205,0.2)",
                 strokeColor: "rgba(151,187,205,1)",
                 pointColor: "rgba(151,187,205,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [28, 48, 40, 19, 86, 27, 90]
+                data: [1424, 1200, 1429, 1264, 1296]
               }
             ]
           };
@@ -64,26 +66,39 @@
       </section>
 
       <section>
-        <h3><a id="test" class="anchor" href="#test" aria-hidden="true"><span class="octicon octicon-link"></span></a>test</h3>
+        <h3><a id="EULCS" class="anchor" href="#EULCS" aria-hidden="true"><span class="octicon octicon-link"></span></a>EULCS by split</h3>
 
-        <canvas id="pieChartLoc" height="300" width="300"></canvas>
+        <canvas id="myChart" height="400" width="600"></canvas>
         <script>
-          var pieChartData = [
-            {
-              value: 50,
-              color:"lightblue"
-              
-            },
-            {
-              value: 10,
-              color: "red"
-            },
-            {
-              value: 40,
-              color: "green"
-            }
-          ]
-          var myLine = new Chart(document.getElementById("pieChartLoc").getContext("2d")).Pie(pieChartData);
+          var ctx = document.getElementById("myChart").getContext("2d");
+          var data = {
+            labels: ["Season 3 Spring", "Season 3 Summer", 
+            "Season 4 Spring", "Season 4 Summer", 
+            "Season 5 Spring"],
+            datasets: [
+              {
+                label: "FNC",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [1428, 1264, 1296, 1360, 1296]
+              },
+              {
+                label: "SK",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [1296, 1152, 1328, 1232, 1328]
+              }
+            ]
+          };
+          var myLineChart = new Chart(ctx).Line(data);
         </script>
       </section>
 
