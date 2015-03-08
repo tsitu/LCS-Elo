@@ -33,8 +33,8 @@
 
         <canvas id="NALCS" height="400" width="600"></canvas>
         <script>
-          var ctx = document.getElementById("NALCS").getContext("2d");
-          var data = {
+          var ctx1 = document.getElementById("NALCS").getContext("2d");
+          var NAdata = {
             labels: ["Season 3 Spring", "Season 3 Summer", 
             "Season 4 Spring", "Season 4 Summer", 
             "Season 5 Spring"],
@@ -61,17 +61,15 @@
               }
             ]
           };
-          var myLineChart = new Chart(ctx).Line(data);
+          var myLineChart1 = new Chart(ctx1).Line(NAdata);
         </script>
-      </section>
 
-      <section>
         <h3><a id="EULCS" class="anchor" href="#EULCS" aria-hidden="true"><span class="octicon octicon-link"></span></a>EULCS by split</h3>
 
         <canvas id="EULCS" height="400" width="600"></canvas>
         <script>
-          var ctx = document.getElementById("EULCS").getContext("2d");
-          var data = {
+          var ctx2 = document.getElementById("EULCS").getContext("2d");
+          var EUdata = {
             labels: ["Season 3 Spring", "Season 3 Summer", 
             "Season 4 Spring", "Season 4 Summer", 
             "Season 5 Spring"],
@@ -98,7 +96,7 @@
               }
             ]
           };
-          var myLineChart = new Chart(ctx).Line(data);
+          var myLineChart2 = new Chart(ctx2).Line(EUdata);
         </script>
       </section>
 
