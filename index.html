@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/Chart.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,23 +25,43 @@
         </ul>
 
         <p class="header">This project is maintained by <a class="header name" href="https://github.com/tsitu">tsitu</a></p>
-
-
       </header>
+
       <section>
         <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+          <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+          <pre><code>$ cd your_repo_root/repo_name
+          $ git fetch origin
+          $ git checkout gh-pages
+          </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
+          <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
       </section>
+
+      <section>
+        <canvas id="pieChartLoc" height="300" width="300"></canvas>
+        <script>
+            var pieChartData = [
+                {
+                    value: 50,
+                    color:"lightblue"
+                
+                },
+                {
+                    value: 10,
+                    color: "red"
+                },
+                {
+                    value: 40,
+                    color: "green"
+                }
+            ]
+          var myLine = new Chart(document.getElementById("pieChartLoc").getContext("2d")).Pie(pieChartData);
+        </script>
+
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
