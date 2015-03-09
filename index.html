@@ -18,10 +18,10 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Hi!</h1>
-        <p class="header">These are Chart.js graphs of data from my ELO calculator for League of Legends NA/EULCS teams.</p>
-
         <ul>
+          <h1 class="header">Hi!</h1>
+          <li><a class="buttons" href="http://tsitu.github.io/LCS-Elo#NALCS">NALCS</a></li>
+          <li><a class="buttons" href="http://tsitu.github.io/LCS-Elo#EULCS">EULCS</a></li>
           <li><a class="buttons github" href="https://github.com/tsitu/LCS-Elo">View On GitHub</a></li>
         </ul>
 
@@ -29,9 +29,16 @@
       </header>
 
       <section>
-        <h3><a id="NALCS" class="anchor" href="#NALCS" aria-hidden="true"><span class="octicon octicon-link"></span></a>NALCS by split</h3>
+        &nbsp;
+        <p align="center"><img src="images/LCSLogo.png" alt="LCS Logo">
+        <p align="center">These are graphs of the data from my ELO calculator for League of Legends LCS teams, 
+        visualized using Chart.js. Navigate leagues on the left. Base ELO is 1200 with a k-factor of 32.</p></p>
 
-        <canvas id="NA" height="400" width="600"></canvas>
+        <h3><a id="NALCS" class="anchor" href="#NALCS" aria-hidden="true"><span class="octicon octicon-link"></span></a>NALCS</h3>
+
+        <h4><a id="NASplit" class="anchor" href="#NASplit" aria-hidden="true"><span class="octicon octicon-link"></span></a>By split</h4>
+
+        <canvas id="NA" height="400" width="650"></canvas>
         <script>
           var ctx = document.getElementById("NA").getContext("2d");
           var data = {
@@ -41,24 +48,194 @@
             datasets: [
               {
                 label: "C9",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
+                fillColor: "rgba(218,165,32,0.2)",
+                strokeColor: "rgba(218,165,32,1)",
+                pointColor: "rgba(218,165,32,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
+                pointHighlightStroke: "rgba(218,165,32,1)",
                 data: [null, 1524, 1474, 1328, 1264]
               },
               {
                 label: "TSM",
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
+                fillColor: "rgba(192,192,192,0.2)",
+                strokeColor: "rgba(192,192,192,1)",
+                pointColor: "rgba(192,192,192,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [1424, 1200, 1429, 1264, 1296]
-              }
+                pointHighlightStroke: "rgba(192,192,192,1)",
+                data: [1424, 1200, 1429, 1264, 1328]
+              },
+              {
+                label: "LMQ",
+                fillColor: "rgba(205,127,50,0.2)",
+                strokeColor: "rgba(205,127,50,1)",
+                pointColor: "rgba(205,127,50,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(205,127,50,1)",
+                data: [null, null, null, 1328, null]
+              },
+              {
+                label: "VUL",
+                fillColor: "rgba(210,217,0,0.2)",
+                strokeColor: "rgba(210,217,0,1)",
+                pointColor: "rgba(210,217,0,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(210,217,0,1)",
+                data: [1136, 1378, null, null, null]
+              },
+              {
+                label: "CLG",
+                fillColor: "rgba(2,97,16,0.2)",
+                strokeColor: "rgba(2,97,16,1)",
+                pointColor: "rgba(2,97,16,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(2,97,16,1)",
+                data: [1168, 1152, 1328, 1168, 1296]
+              },
+              {
+                label: "TL",
+                fillColor: "rgba(180,79,219,0.2)",
+                strokeColor: "rgba(180,79,219,1)",
+                pointColor: "rgba(180,79,219,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(180,79,219,1)",
+                data: [null, null, null, null, 1200]
+              },
+              {
+                label: "CRS",
+                fillColor: "rgba(180,50,50,0.2)",
+                strokeColor: "rgba(180,50,50,1)",
+                pointColor: "rgba(180,50,50,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(180,50,50,1)",
+                data: [1360, 1168, 1104, 1168, null]
+              },
+              {
+                label: "GV",
+                fillColor: "rgba(0,63,200,0.2)",
+                strokeColor: "rgba(0,63,200,1)",
+                pointColor: "rgba(0,63,200,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(0,63,200,1)",
+                data: [null, null, null, null, 1200]
+              },
+              {
+                label: "T8",
+                fillColor: "rgba(10,20,40,0.2)",
+                strokeColor: "rgba(10,20,40,1)",
+                pointColor: "rgba(10,20,40,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(10,20,40,1)",
+                data: [null, null, null, null, 1200]
+              },
+              {
+                label: "TIP",
+                fillColor: "rgba(215,111,9,0.2)",
+                strokeColor: "rgba(215,111,9,1)",
+                pointColor: "rgba(215,111,9,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(215,111,9,1)",
+                data: [null, null, null, null, 1232]
+              },
+              {
+                label: "WFX",
+                fillColor: "rgba(158,154,28,0.2)",
+                strokeColor: "rgba(158,154,28,1)",
+                pointColor: "rgba(158,154,28,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(158,154,28,1)",
+                data: [null, null, null, null, 1136]
+              },
+              {
+                label: "DIG",
+                fillColor: "rgba(0,22,166,0.2)",
+                strokeColor: "rgba(0,22,166,1)",
+                pointColor: "rgba(0,22,166,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(0,22,166,1)",
+                data: [1296, 1184, 1136, 1168, 1136]
+              },
+              {
+                label: "GGU",
+                fillColor: "rgba(130,252,238,0.2)",
+                strokeColor: "rgba(130,252,238,1)",
+                pointColor: "rgba(130,252,238,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(130,252,238,1)",
+                data: [1104, null, null, null, null]
+              },
+              {
+                label: "EG",
+                fillColor: "rgba(176,93,252,0.2)",
+                strokeColor: "rgba(176,93,252,1)",
+                pointColor: "rgba(176,93,252,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(176,93,252,1)",
+                data: [null, null, 1022, 1104, null]
+              },
+              {
+                label: "MRN",
+                fillColor: "rgba(247,5,5,0.2)",
+                strokeColor: "rgba(247,5,5,1)",
+                pointColor: "rgba(247,5,5,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(247,5,5,1)",
+                data: [1072, null, null, null, null]
+              },
+              {
+                label: "XDG",
+                fillColor: "rgba(158,129,79,0.2)",
+                strokeColor: "rgba(158,129,79,1)",
+                pointColor: "rgba(158,129,79,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(158,129,79,1)",
+                data: [null, null, 1003, null, null]
+              },
+              {
+                label: "COL",
+                fillColor: "rgba(186,86,86,0.2)",
+                strokeColor: "rgba(186,86,86,1)",
+                pointColor: "rgba(186,86,86,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(186,86,86,1)",
+                data: [1040, null, null, 1072, null]
+              },
+              {
+                label: "CST",
+                fillColor: "rgba(217,108,0,0.2)",
+                strokeColor: "rgba(217,108,0,1)",
+                pointColor: "rgba(217,108,0,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(217,108,0,1)",
+                data: [null, 1054, 1104, null, 1008]
+              },
+              {
+                label: "VES",
+                fillColor: "rgba(122,207,135,0.2)",
+                strokeColor: "rgba(122,207,135,1)",
+                pointColor: "rgba(122,207,135,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(122,207,135,1)",
+                data: [null, 940, null, null, null]
+              },
             ]
           };
           var options = {
@@ -87,7 +264,7 @@
             pointDot : true,
 
             //Number - Radius of each point dot in pixels
-            pointDotRadius : 4,
+            pointDotRadius : 3,
 
             //Number - Pixel width of point dot stroke
             pointDotStrokeWidth : 1,
@@ -111,17 +288,191 @@
             multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>",
 
             //Override scale for better display
-            scaleOverride : true,
-            scaleStartValue : 800,
-            scaleStepWidth : 100,
-            scaleSteps : 10
+            scaleOverride: true,
+            scaleStartValue: 900,
+            scaleStepWidth: 100,
+            scaleSteps: 7
           };
           var myLineChart = new Chart(ctx).Line(data, options);
         </script>
 
-        <h3><a id="EULCS" class="anchor" href="#EULCS" aria-hidden="true"><span class="octicon octicon-link"></span></a>EULCS by split</h3>
+        <p align="center"><em>NOTE: Tooltip ranks are in no particular order</em></p>
 
-        <canvas id="EU" height="400" width="600"></canvas>
+        <h4><a id="NAOverall" class="anchor" href="#NAOverall" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overall</h4>
+
+        <canvas id="NAO" height="430" width="650"></canvas>
+        <script>
+          var ctx = document.getElementById("NAO").getContext("2d");
+          var data = {
+            labels: ["Teams (highest-lowest)"],
+            datasets: [
+              {
+                label: "TSM",
+                fillColor: "rgba(192,192,192,0.7)",
+                strokeColor: "rgba(192,192,192,1)",
+                data: [1595]
+              },
+              {
+                label: "C9",
+                fillColor: "rgba(218,165,32,0.7)",
+                strokeColor: "rgba(218,165,32,1)",
+                data: [1581]
+              },
+              {
+                label: "LMQ",
+                fillColor: "rgba(205,127,50,0.7)",
+                strokeColor: "rgba(205,127,50,1)",
+                data: [1342]
+              },
+              {
+                label: "VUL",
+                fillColor: "rgba(210,217,0,0.7)",
+                strokeColor: "rgba(210,217,0,1)",
+                data: [1328]
+              },
+              {
+                label: "CLG",
+                fillColor: "rgba(2,97,16,0.7)",
+                strokeColor: "rgba(2,97,16,1)",
+                data: [1326]
+              },
+              {
+                label: "TIP",
+                fillColor: "rgba(215,111,9,0.7)",
+                strokeColor: "rgba(215,111,9,1)",
+                data: [1245]
+              },
+              {
+                label: "CRS",
+                fillColor: "rgba(180,50,50,0.7)",
+                strokeColor: "rgba(180,50,50,1)",
+                data: [1241]
+              },
+              {
+                label: "GV",
+                fillColor: "rgba(0,63,200,0.7)",
+                strokeColor: "rgba(0,63,200,1)",
+                data: [1213]
+              },
+              {
+                label: "TL",
+                fillColor: "rgba(180,79,219,0.7)",
+                strokeColor: "rgba(180,79,219,1)",
+                data: [1213]
+              },
+              {
+                label: "T8",
+                fillColor: "rgba(10,20,40,0.7)",
+                strokeColor: "rgba(10,20,40,1)",
+                data: [1200]
+              },
+              {
+                label: "WFX",
+                fillColor: "rgba(158,154,28,0.7)",
+                strokeColor: "rgba(158,154,28,1)",
+                data: [1163]
+              },
+              {
+                label: "DIG",
+                fillColor: "rgba(0,22,166,0.7)",
+                strokeColor: "rgba(0,22,166,1)",
+                data: [1161]
+              },
+              {
+                label: "GGU",
+                fillColor: "rgba(130,252,238,0.7)",
+                strokeColor: "rgba(130,252,238,1)",
+                data: [1104]
+              },
+              {
+                label: "EG",
+                fillColor: "rgba(176,93,252,0.7)",
+                strokeColor: "rgba(176,93,252,1)",
+                data: [1078]
+              },
+              {
+                label: "MRN",
+                fillColor: "rgba(247,5,5,0.7)",
+                strokeColor: "rgba(247,5,5,1)",
+                data: [1072]
+              },
+              {
+                label: "XDG",
+                fillColor: "rgba(158,129,79,0.7)",
+                strokeColor: "rgba(158,129,79,1)",
+                data: [1058]
+              },
+              {
+                label: "COL",
+                fillColor: "rgba(186,86,86,0.7)",
+                strokeColor: "rgba(186,86,86,1)",
+                data: [1022]
+              },
+              {
+                label: "VES",
+                fillColor: "rgba(122,207,135,0.7)",
+                strokeColor: "rgba(122,207,135,1)",
+                data: [940]
+              },
+              {
+                label: "CST",
+                fillColor: "rgba(217,108,0,0.7)",
+                strokeColor: "rgba(217,108,0,1)",
+                data: [918]
+              },
+            ]
+          };
+          var options = {
+            //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+            scaleBeginAtZero : true,
+
+            //Boolean - Whether grid lines are shown across the chart
+            scaleShowGridLines : true,
+
+            //String - Colour of the grid lines
+            scaleGridLineColor : "rgba(0,0,0,.05)",
+
+            //Number - Width of the grid lines
+            scaleGridLineWidth : 1,
+
+            //Boolean - Whether to show horizontal lines (except X axis)
+            scaleShowHorizontalLines: true,
+
+            //Boolean - Whether to show vertical lines (except Y axis)
+            scaleShowVerticalLines: true,
+
+            //Boolean - If there is a stroke on each bar
+            barShowStroke : true,
+
+            //Number - Pixel width of the bar stroke
+            barStrokeWidth : 2,
+
+            //Number - Spacing between each of the X value sets
+            barValueSpacing : 5,
+
+            //Number - Spacing between data sets within X values
+            barDatasetSpacing : 1,
+
+            //String - A legend template
+            legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+
+            //Tooltip template from StackOverflow
+            multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>",
+
+            //Override scale for better display
+            scaleOverride: true,
+            scaleStartValue: 800,
+            scaleStepWidth: 100,
+            scaleSteps: 8
+          };
+          var myBarChart = new Chart(ctx).Bar(data, options);
+        </script>
+
+        <h3><a id="EULCS" class="anchor" href="#EULCS" aria-hidden="true"><span class="octicon octicon-link"></span></a>EULCS</h3>
+
+        <h4><a id="EUSplit" class="anchor" href="#EUSplit" aria-hidden="true"><span class="octicon octicon-link"></span></a>By split</h4>
+
+        <canvas id="EU" height="400" width="650"></canvas>
         <script>
           var ctx = document.getElementById("EU").getContext("2d");
           var data = {
@@ -131,34 +482,194 @@
             datasets: [
               {
                 label: "FNC",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
+                fillColor: "rgba(218,165,32,0.2)",
+                strokeColor: "rgba(218,165,32,1)",
+                pointColor: "rgba(218,165,32,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
+                pointHighlightStroke: "rgba(218,165,32,1)",
                 data: [1428, 1264, 1296, 1360, 1296]
               },
               {
                 label: "SK",
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
+                fillColor: "rgba(192,192,192,0.2)",
+                strokeColor: "rgba(192,192,192,1)",
+                pointColor: "rgba(192,192,192,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
+                pointHighlightStroke: "rgba(192,192,192,1)",
                 data: [1296, 1152, 1328, 1232, 1328]
               },
               {
                 label: "ALL",
-                fillColor: "rgba(179,7,156,0.2)",
-                strokeColor: "rgba(179,7,156,1)",
-                pointColor: "rgba(179,7,156,1)",
+                fillColor: "rgba(205,127,50,0.2)",
+                strokeColor: "rgba(205,127,50,1)",
+                pointColor: "rgba(205,127,50,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(179,7,156,1)",
+                pointHighlightStroke: "rgba(205,127,50,1)",
                 data: [null, null, 1264, 1410, null]
-              }
+              },
+              {
+                label: "LD",
+                fillColor: "rgba(210,217,0,0.2)",
+                strokeColor: "rgba(210,217,0,1)",
+                pointColor: "rgba(210,217,0,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(210,217,0,1)",
+                data: [null, 1328, null, null, null]
+              },
+              {
+                label: "H2K",
+                fillColor: "rgba(2,97,16,0.2)",
+                strokeColor: "rgba(2,97,16,1)",
+                pointColor: "rgba(2,97,16,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(2,97,16,1)",
+                data: [null, null, null, null, 1296]
+              },
+              {
+                label: "GMB",
+                fillColor: "rgba(180,79,219,0.2)",
+                strokeColor: "rgba(180,79,219,1)",
+                pointColor: "rgba(180,79,219,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(180,79,219,1)",
+                data: [1410, 1216, 1200, 1038, 1232]
+              },
+              {
+                label: "EG",
+                fillColor: "rgba(180,50,50,0.2)",
+                strokeColor: "rgba(180,50,50,1)",
+                pointColor: "rgba(180,50,50,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(180,50,50,1)",
+                data: [1232, 1248, null, null, null]
+              },
+              {
+                label: "UOL",
+                fillColor: "rgba(0,63,200,0.2)",
+                strokeColor: "rgba(0,63,200,1)",
+                pointColor: "rgba(0,63,200,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(0,63,200,1)",
+                data: [null, null, null, null, 1200]
+              },
+              {
+                label: "NIP",
+                fillColor: "rgba(10,20,40,0.2)",
+                strokeColor: "rgba(10,20,40,1)",
+                pointColor: "rgba(10,20,40,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(10,20,40,1)",
+                data: [null, 1200, null, null, null]
+              },
+              {
+                label: "ATN",
+                fillColor: "rgba(215,111,9,0.2)",
+                strokeColor: "rgba(215,111,9,1)",
+                pointColor: "rgba(215,111,9,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(215,111,9,1)",
+                data: [null, 1184, null, null, null]
+              },
+              {
+                label: "SHC",
+                fillColor: "rgba(158,154,28,0.2)",
+                strokeColor: "rgba(158,154,28,1)",
+                pointColor: "rgba(158,154,28,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(158,154,28,1)",
+                data: [null, null, 1072, 1264, null]
+              },
+              {
+                label: "EL",
+                fillColor: "rgba(0,22,166,0.2)",
+                strokeColor: "rgba(0,22,166,1)",
+                pointColor: "rgba(0,22,166,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(0,22,166,1)",
+                data: [null, null, null, null, 1136]
+              },
+              {
+                label: "ROC",
+                fillColor: "rgba(130,252,238,0.2)",
+                strokeColor: "rgba(130,252,238,1)",
+                pointColor: "rgba(130,252,238,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(130,252,238,1)",
+                data: [null, null, 1232, 1136, 1136]
+              },
+              {
+                label: "AAA",
+                fillColor: "rgba(176,93,252,0.2)",
+                strokeColor: "rgba(176,93,252,1)",
+                pointColor: "rgba(176,93,252,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(176,93,252,1)",
+                data: [1072, null, null, null, null]
+              },
+              {
+                label: "MIL",
+                fillColor: "rgba(247,5,5,0.2)",
+                strokeColor: "rgba(247,5,5,1)",
+                pointColor: "rgba(247,5,5,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(247,5,5,1)",
+                data: [null, null, 1040, 1168, null]
+              },
+              {
+                label: "CW",
+                fillColor: "rgba(158,129,79,0.2)",
+                strokeColor: "rgba(158,129,79,1)",
+                pointColor: "rgba(158,129,79,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(158,129,79,1)",
+                data: [1168, null, 1168, 992, 1200]
+              },
+              {
+                label: "DB",
+                fillColor: "rgba(186,86,86,0.2)",
+                strokeColor: "rgba(186,86,86,1)",
+                pointColor: "rgba(186,86,86,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(186,86,86,1)",
+                data: [972, null, null, null, null]
+              },
+              {
+                label: "GIA",
+                fillColor: "rgba(217,108,0,0.2)",
+                strokeColor: "rgba(217,108,0,1)",
+                pointColor: "rgba(217,108,0,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(217,108,0,1)",
+                data: [1022, null, null, null, 1104]
+              },
+              {
+                label: "MYM",
+                fillColor: "rgba(122,207,135,0.2)",
+                strokeColor: "rgba(122,207,135,1)",
+                pointColor: "rgba(122,207,135,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(122,207,135,1)",
+                data: [null, 1008, null, null, 1072]
+              },
             ]
           };
           var options = {
@@ -187,7 +698,7 @@
             pointDot : true,
 
             //Number - Radius of each point dot in pixels
-            pointDotRadius : 4,
+            pointDotRadius : 3,
 
             //Number - Pixel width of point dot stroke
             pointDotStrokeWidth : 1,
@@ -212,11 +723,183 @@
 
             //Override scale for better display
             scaleOverride : true,
-            scaleStartValue : 800,
+            scaleStartValue : 900,
             scaleStepWidth : 100,
-            scaleSteps : 10
+            scaleSteps : 7
           };
           var myLineChart = new Chart(ctx).Line(data, options);
+        </script>
+
+        <p align="center"><em>NOTE: Tooltip ranks are in no particular order</em></p>
+
+        <h4><a id="EUOverall" class="anchor" href="#EUOverall" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overall</h4>
+
+        <canvas id="EUO" height="430" width="650"></canvas>
+        <script>
+          var ctx = document.getElementById("EUO").getContext("2d");
+          var data = {
+            labels: ["Teams (highest-lowest)"],
+            datasets: [
+              {
+                label: "FNC",
+                fillColor: "rgba(218,165,32,0.7)",
+                strokeColor: "rgba(218,165,32,1)",
+                data: [1542]
+              },
+              {
+                label: "SK",
+                fillColor: "rgba(192,192,192,0.7)",
+                strokeColor: "rgba(192,192,192,1)",
+                data: [1494]
+              },
+              {
+                label: "ALL",
+                fillColor: "rgba(205,127,50,0.7)",
+                strokeColor: "rgba(205,127,50,1)",
+                data: [1488]
+              },
+              {
+                label: "LD",
+                fillColor: "rgba(210,217,0,0.7)",
+                strokeColor: "rgba(210,217,0,1)",
+                data: [1328]
+              },
+              {
+                label: "H2K",
+                fillColor: "rgba(2,97,16,0.7)",
+                strokeColor: "rgba(2,97,16,1)",
+                data: [1310]
+              },
+              {
+                label: "GMB",
+                fillColor: "rgba(180,79,219,0.7)",
+                strokeColor: "rgba(180,79,219,1)",
+                data: [1296]
+              },
+              {
+                label: "EG",
+                fillColor: "rgba(180,50,50,0.7)",
+                strokeColor: "rgba(180,50,50,1)",
+                data: [1280]
+              },
+              {
+                label: "UOL",
+                fillColor: "rgba(0,63,200,0.7)",
+                strokeColor: "rgba(0,63,200,1)",
+                data: [1213]
+              },
+              {
+                label: "NIP",
+                fillColor: "rgba(10,20,40,0.7)",
+                strokeColor: "rgba(10,20,40,1)",
+                data: [1200]
+              },
+              {
+                label: "ATN",
+                fillColor: "rgba(215,111,9,0.7)",
+                strokeColor: "rgba(215,111,9,1)",
+                data: [1184]
+              },
+              {
+                label: "SHC",
+                fillColor: "rgba(158,154,28,0.7)",
+                strokeColor: "rgba(158,154,28,1)",
+                data: [1176]
+              },
+              {
+                label: "EL",
+                fillColor: "rgba(0,22,166,0.7)",
+                strokeColor: "rgba(0,22,166,1)",
+                data: [1136]
+              },
+              {
+                label: "ROC",
+                fillColor: "rgba(130,252,238,0.7)",
+                strokeColor: "rgba(130,252,238,1)",
+                data: [1118]
+              },
+              {
+                label: "AAA",
+                fillColor: "rgba(176,93,252,0.7)",
+                strokeColor: "rgba(176,93,252,1)",
+                data: [1072]
+              },
+              {
+                label: "MIL",
+                fillColor: "rgba(247,5,5,0.7)",
+                strokeColor: "rgba(247,5,5,1)",
+                data: [1063]
+              },
+              {
+                label: "CW",
+                fillColor: "rgba(158,129,79,0.7)",
+                strokeColor: "rgba(158,129,79,1)",
+                data: [1038]
+              },
+              {
+                label: "DB",
+                fillColor: "rgba(186,86,86,0.7)",
+                strokeColor: "rgba(186,86,86,1)",
+                data: [972]
+              },
+              {
+                label: "GIA",
+                fillColor: "rgba(217,108,0,0.7)",
+                strokeColor: "rgba(217,108,0,1)",
+                data: [968]
+              },
+              {
+                label: "MYM",
+                fillColor: "rgba(122,207,135,0.7)",
+                strokeColor: "rgba(122,207,135,1)",
+                data: [922]
+              },
+            ]
+          };
+          var options = {
+            //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+            scaleBeginAtZero : true,
+
+            //Boolean - Whether grid lines are shown across the chart
+            scaleShowGridLines : true,
+
+            //String - Colour of the grid lines
+            scaleGridLineColor : "rgba(0,0,0,.05)",
+
+            //Number - Width of the grid lines
+            scaleGridLineWidth : 1,
+
+            //Boolean - Whether to show horizontal lines (except X axis)
+            scaleShowHorizontalLines: true,
+
+            //Boolean - Whether to show vertical lines (except Y axis)
+            scaleShowVerticalLines: true,
+
+            //Boolean - If there is a stroke on each bar
+            barShowStroke : true,
+
+            //Number - Pixel width of the bar stroke
+            barStrokeWidth : 2,
+
+            //Number - Spacing between each of the X value sets
+            barValueSpacing : 5,
+
+            //Number - Spacing between data sets within X values
+            barDatasetSpacing : 1,
+
+            //String - A legend template
+            legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+
+            //Tooltip template from StackOverflow
+            multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>",
+
+            //Override scale for better display
+            scaleOverride: true,
+            scaleStartValue: 800,
+            scaleStepWidth: 100,
+            scaleSteps: 8
+          };
+          var myBarChart = new Chart(ctx).Bar(data, options);
         </script>
       </section>
 
