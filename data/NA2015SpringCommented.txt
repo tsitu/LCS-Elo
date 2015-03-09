@@ -87,9 +87,17 @@ T8 DIG
 
 //WEEK 7
 // Day 1
-
+DIG CST
+CLG GV
+TSM WFX
+TIP C9
+T8 TL
 // Day 2
-
+C9 DIG
+TSM T8
+TIP TL
+GV WFX
+CLG CST
 
 //WEEK 8
 //Day 1
